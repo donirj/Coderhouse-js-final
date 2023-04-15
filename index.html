@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="divFormulario">
+        <form id="formulario" class="form">
+            <h2>Hello, enter your data to continue...</h2>
+            <br><br><br>
+            <br><br>Name: <input type="text" name="clientName" id="name">
+            <br><br>Last name: <input type="text" name="clientLastname" id="lastname">
+            <br><br>Email: <input type="email" name="clientEmail" id="email">
+            <br><br><input type="submit" value="enter" id="submitBtn">
+            
+        </form>
+    </div>
+
+    <br><div class="advertisingText" id="errorMessage"></div>
+    <br><div class="advertisingText" id="welcomeMessage"></div>
+
+    <div>
+        <p id="carDetails"></p>
+    </div>
+
+    <div id="lista"></div>
+
+    <div id="carDetails" class="">
+        <table class="table">
+            <thead id="thead"></thead>
+            <tbody id="tbody"></tbody>
+            <div id="TotalPrice" class="total"></div>
+
+        </table>
+        <p id="total"></p>
+    </div>
+
+    <div class="box1">
+        <button id="primerBtn"></button>
+        <button id="buyBtn" class="btn btn-success"></button>
+    </div>
+    <div class="box1">
+        <button id="end" class="btn btn-success">Total</button>
+    </div>
+
+    <div class="row" id="divProducts"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
