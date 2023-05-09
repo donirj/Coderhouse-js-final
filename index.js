@@ -91,8 +91,8 @@ primerBtn.onclick = () => {
             li.innerHTML = 
             `
             <div class="cardBox">
-            <p>${id}</p>
-            <p style="text-align: center;">${name}</p>
+            <p class="charData">Char. ${id}</p>
+            <p class="charData" style="text-align: center;  font-weight: bold;">${name}</p>
             <img src=${image} style="width: 60px;height: 70px;">`
             // `<button id='btnAdd' class='btn btn-primary'>Add</button>`
             lista.append(li)
@@ -127,7 +127,7 @@ buyBtn.onclick = () => {
 
     products.forEach(prod => {
         divProducts.innerHTML +=  `
-        <div class="card">
+        <div class="cardProduct">
             <div class="card-body">
                 <h5 class="card-title">${prod.name}</h5>
                 <p class="card-text">$${prod.price}</p>

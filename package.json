@@ -1,0 +1,20 @@
+{
+  "name": "proyectfinal-resendiz",
+  "version": "1.0.0",
+  "description": "1. go to index.html\r 2. do right click and open with live server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donirj/Coderhouse-js-final.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donirj/Coderhouse-js-final/issues"
+  },
+  "homepage": "https://github.com/donirj/Coderhouse-js-final#readme"
+}

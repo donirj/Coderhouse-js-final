@@ -21,8 +21,10 @@
         </form>
     </div>
 
-    <br><div class="advertisingText" id="errorMessage"></div>
-    <br><div class="advertisingText" id="welcomeMessage"></div>
+    <div class="divFormulario">
+        <br><div class="advertisingText" id="errorMessage"></div>
+        <br><div class="advertisingText" id="welcomeMessage"></div>
+    </div>
 
     <div>
         <p id="carDetails"></p>
@@ -40,12 +42,18 @@
         <p id="total"></p>
     </div>
 
-    <div class="box1">
-        <button id="primerBtn"></button>
-        <button id="buyBtn" class="btn btn-success"></button>
-    </div>
-    <div class="box1">
-        <button id="end" class="btn btn-success">Total</button>
+    <div class="divFormulario" id="buttonBox">
+        <div class="box1">
+            <button id="primerBtn"></button>
+            <button id="buyBtn" class="btn btn-success"></button>
+        </div>
+        
+        <div class="box1">
+            <button id="end" class="btn btn-success">Total</button>
+        </div>
+        <button class="box1"  type="button" onClick="window.location.reload()">
+            Reset
+         </button>
     </div>
 
     <div class="row" id="divProducts"></div>
