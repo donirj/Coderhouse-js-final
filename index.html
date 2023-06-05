@@ -5,58 +5,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins&family=Raleway+Dots&family=Raleway:wght@300;400;500;600;700;800&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
 
-    <div class="divFormulario">
-        <form id="formulario" class="form">
-            <h2>Hello, enter your data to continue...</h2>
-            <br><br><br>
-            <br><br>Name: <input type="text" name="clientName" id="name">
-            <br><br>Last name: <input type="text" name="clientLastname" id="lastname">
-            <br><br>Email: <input type="email" name="clientEmail" id="email">
-            <br><br><input type="submit" value="enter" id="submitBtn">
-            
-        </form>
-    </div>
+    <div class="mainContainer">
+        <div>
+            <div class="divFormulario">
+                <form id="formulario" class="form">
+                    <h2 class="mainTitle">Hello, enter your data to continue...</h2>
+                    <br><br><br>
+                    <br><br><span class="inputTitle">Name</span><br> <input type="text" name="clientName" id="name" class="input" placeholder="Introduce tu nombre">
+                    <br><br><span class="inputTitle">Last name</span><br> <input type="text" name="clientLastname" id="lastname" class="input" placeholder="Introduce tu apellido">
+                    <br><br><span class="inputTitle">Email</span><br> <input type="email" name="clientEmail" id="email" class="input" placeholder="Introduce tu email">
+                    <br><br><input class="submitBtn" type="submit" value="enter" id="submitBtn">
+                    
+                </form>
+            </div>
 
-    <div class="divFormulario">
-        <br><div class="advertisingText" id="errorMessage"></div>
-        <br><div class="advertisingText" id="welcomeMessage"></div>
-    </div>
+            <div class="divFormulario">
+                <br><div class="advertisingText" id="errorMessage"></div>
+                <br><div class="advertisingText" id="welcomeMessage"></div>
+            </div>
 
-    <div>
-        <p id="carDetails"></p>
-    </div>
+            <div>
+                <p id="carDetails"></p>
+            </div>
 
-    <div id="lista"></div>
+            <div id="lista"></div>
 
-    <div id="carDetails" class="">
-        <table class="table">
-            <thead id="thead"></thead>
-            <tbody id="tbody"></tbody>
-            <div id="TotalPrice" class="total"></div>
+            <div id="carDetails" class="">
+                <table class="table">
+                    <thead id="thead"></thead>
+                    <tbody id="tbody"></tbody>
+                    <div id="TotalPrice" class="total"></div>
 
-        </table>
-        <p id="total"></p>
-    </div>
+                </table>
+                <p id="total"></p>
+            </div>
 
-    <div class="divFormulario" id="buttonBox">
-        <div class="box1">
-            <button id="primerBtn"></button>
-            <button id="buyBtn" class="btn btn-success"></button>
+            <div class="divFormulario" id="buttonBox">
+                <div class="box1">
+                    <button class="btn btn-primary" id="primerBtn"></button>
+                    <button id="buyBtn" class="btn btn-success"></button>
+                </div>
+                
+                <div class="box1">
+                    <button id="end" class="btn btn-success">Total</button>
+                </div>
+                <button class="btn btn-danger"  type="button" onClick="window.location.reload()">
+                    Reset
+                </button>
+            </div>
+
+            <div class="row" id="divProducts"></div>
         </div>
-        
-        <div class="box1">
-            <button id="end" class="btn btn-success">Total</button>
+        <div class="imgContainer">
+            <img class="imgOffice" src="./assets/Captura.JPG" alt="">
         </div>
-        <button class="box1"  type="button" onClick="window.location.reload()">
-            Reset
-         </button>
     </div>
-
-    <div class="row" id="divProducts"></div>
 
     <script src="./index.js"></script>
 </body>

@@ -13,6 +13,8 @@ const buyBtn = document.querySelector('#buyBtn')
 const divProducts = document.getElementById('divProducts')
 const totalPrice = document.getElementById('TotalPrice')
 const endBtn = document.getElementById('end') 
+const imgContainer = document.querySelector('.imgContainer')
+console.log(imgContainer)
 
 const userInformation = {
     inputName: inputName.value,
@@ -56,6 +58,8 @@ formulario.onsubmit = (e) => {
         errorMessage.remove()
         localStorage.setItem('userInformation', JSON.stringify(userInformation))
         formulario.remove()
+        // imgContainer.element.style.display = 'none';
+        document.querySelector('.imgContainer').style.display = 'none';;  
         welcomeMessage.innerText = `Welcome ${inputName.value} ${inputLastname.value}, you can choose to see your favorite characters or buy something`
         document.querySelector('#primerBtn').disabled = false;
         document.querySelector('#buyBtn').disabled = false;
